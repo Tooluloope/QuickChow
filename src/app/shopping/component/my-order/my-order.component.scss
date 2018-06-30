@@ -1,0 +1,85 @@
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+
+header.masthead {
+    position: relative;
+    background: url('https://res.cloudinary.com/dn1b66xo5/image/upload/q_auto:best/v1513047040/myaccount_yqeuux.jpg') no-repeat fixed center center;
+    opacity: 0.8;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    height: 50vh !important;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+  @media (max-width: 414px) {
+    .table-xs tr,
+    .table-xs td,
+    .table-xs tbody,
+    .table-xs thead,
+    .table-xs tfoot,
+    .table-xs th {
+      display: table;
+      width: 100%;
+      border-collapse: separate;
+    }
+    .table-xs > tbody tr:first-child {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .table-xs td[title]:before {
+      content: attr(title) ": ";
+    }
+    .table-xs td:before {
+      white-space: nowrap;
+      width: 100%;
+      display: table-cell;
+      text-align: left;
+      font-weight: bold;
+    }
+    .table-xs .item-row td:first-child,
+    .table-xs .item-row td:nth-child(2) {
+      border: 0 none;
+    }
+    .table-xs .item-row td:first-child {
+      border: 0 none;
+    }
+    .table-xs .item-row td:last-child {
+      background: #eee;
+      border-bottom: 2px solid #a2a2a2;
+      font-weight: bold;
+    }
+    .table-xs .item-row img {
+      margin-bottom: 1em;
+    }
+    .table-xs .total-row td {
+      display: table-cell;
+      width: 1%;
+      border-top: 0 none;
+      border-bottom: 3px double #a2a2a2;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .table-xs .total-row td:first-child {
+      width: 99%;
+    }
+  }
+  

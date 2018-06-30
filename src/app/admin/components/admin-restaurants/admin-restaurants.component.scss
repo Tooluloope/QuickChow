@@ -1,0 +1,25 @@
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+
+header.masthead {
+    position: relative;
+    background: url('https://res.cloudinary.com/dn1b66xo5/image/upload/q_auto:best/v1513047040/myaccount_yqeuux.jpg') no-repeat fixed center center;
+    opacity: 0.8;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    height: 50vh !important;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}

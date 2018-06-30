@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppShellComponent } from './app-shell.component';
+import { AdminRestaurantsComponent } from './admin-restaurants.component';
 
-describe('AppShellComponent', () => {
-  let component: AppShellComponent;
-  let fixture: ComponentFixture<AppShellComponent>;
+describe('AdminRestaurantsComponent', () => {
+  let component: AdminRestaurantsComponent;
+  let fixture: ComponentFixture<AdminRestaurantsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppShellComponent ]
+      declarations: [ AdminRestaurantsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppShellComponent);
+    fixture = TestBed.createComponent(AdminRestaurantsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

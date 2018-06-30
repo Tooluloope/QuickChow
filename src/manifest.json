@@ -1,12 +1,12 @@
 {
-  "name": "QuickChow1",
-  "short_name": "QuickChow1",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "QuickChow",
+  "short_name": "QuickChow",
+  "theme_color": "#007c32",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
-  "icons": [
+  "start_url": "/?utm_source=a2hs",
+    "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
       "sizes": "72x72",

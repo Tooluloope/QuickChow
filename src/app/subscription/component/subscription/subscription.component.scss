@@ -1,0 +1,130 @@
+.card .btn-action {
+    margin: -23px 20px -23px auto;
+    background-color: #e65100;
+    height: 47px;
+    width: 47px;
+    line-height: 0;
+}
+
+a p {
+    color: white !important;
+}
+
+.btn-floating {
+    z-index: 1;
+    overflow: hidden;
+    width: 47px;
+    height: 47px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #e65100;
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    vertical-align: middle;
+}
+
+.card .btn-action .fa.fa-chevron-right {
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.card .btn-action .fa {
+    font-size: 18px;
+}
+
+.btn-floating i {
+    width: inherit;
+    font-size: 1.25rem;
+    line-height: 47px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+}
+
+.card .card-data ul {
+    margin-bottom: 0;
+    font-size: .9rem;
+}
+
+.card .card-data ul li,
+.card .card-review ul li {
+    display: inline;
+}
+
+.card .card-data {
+    background-color: #e65100;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+}
+
+.texts {
+    text-align: center !important;
+}
+
+.del {
+    text-decoration: line-through !important;
+    color: #b0aba3;
+}
+
+.dels {
+    color: #007c32;
+}
+
+.btn-floating:hover,
+.card-overlay,
+.card.card-cascade .view,
+.colorful-select .dropdown-content li a:hover,
+.colorful-select .dropdown-content li span:hover,
+.comments-list img,
+.modal-dialog.cascading-modal.modal-avatar .modal-header img,
+.reply-form img,
+.testimonial-carousel .testimonial .avatar img,
+.z-depth-2 {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+// // .tp-wrapper {
+// //     perspective: 800px;
+// // }
+// .tp-box {
+//     position: relative;
+//     // margin: 3rem auto;
+//     transform-style: preserve-3d;
+//     transition: transform 1s;
+// }
+// .tp-box__side {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     backface-visibility: hidden;
+//     cursor: pointer;
+//     user-select: none;
+// }
+// // .tp-box__front {
+// //     background: #f30d36;
+// // }
+// .tp-box__back {
+//     // background: #23262d;
+//     transform: rotateY(179.9deg);
+// }
+// .cards {
+//     /* Add shadows to create the "card" effect */
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+//     transition: 0.3s;
+//     // display: flex;
+// }
+// /* On mouse-over, add a deeper shadow */
+// .cards:hover {
+//     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+// }
+// /* Add some padding inside the card container */
+// .containers {
+//     padding: 2px 16px;
+// }

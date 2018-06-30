@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
-import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,16 @@ import { CoreModule } from './core/core.module';
     BrowserModule.withServerTransition({ appId: 'app-1' }),
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    SharedModule,
     RouterModule,
-    CoreModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
+
+    
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
+  
+
   providers: [],
   bootstrap: [AppComponent]
 })

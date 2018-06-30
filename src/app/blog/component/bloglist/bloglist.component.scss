@@ -1,0 +1,35 @@
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+
+header.masthead {
+    position: relative;
+    background: url(../../../../assets/images/asun-nigerian-finger-food-small-chops.jpg) no-repeat fixed center center;
+    opacity: 0.8;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    height: 50vh !important;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+.crumb {
+    font-weight: bold;
+    color: white;
+}
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); 
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+        border-radius: 0;
+}
