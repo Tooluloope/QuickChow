@@ -9,27 +9,33 @@ import { Subscription, Observable } from 'rxjs';
   styleUrls: ['./our-restaurants.component.scss']
 })
 export class OurRestaurantsComponent implements OnInit {
-  restaurantList: Restaurant[] = [];
-
-  constructor(private restaurantService: RestaurantService) { }
-  rows= [];
+  rows= [      
+];
   columns = [
-    { prop: 'Restaurant' },
+    { prop: 'name' },
     { name: 'Location' },
     { name: 'Delivery' }
   ];
 
-  ngOnInit() {
+  restaurantList: Restaurant[] = [];
+
+  constructor(private restaurantService: RestaurantService) { 
     var x = this.restaurantService.getAll()
-      .snapshotChanges().subscribe(item => {
-        item.forEach(element => {
-          var y = element.payload.toJSON();
-          y['$key'] = element.key;
-          this.restaurantList.push(y as Restaurant);
-          console.log(y);
-          this.rows = [y];
-        })
+    .snapshotChanges().subscribe(item => {
+      item.forEach(element => {
+        var y = element.payload.toJSON();
+        y['$key'] = element.key;
+        this.restaurantList.push(y as Restaurant);
+        console.log(y);
+        this.rows = [
+          { name: y["displayName"], location: y["location"], delivery: y["name"] }
+        ]
+        
       })
+    })
+  }
+  ngOnInit() {
+   
   }
  
 }
