@@ -8,6 +8,8 @@ import { RestaurantComponent } from '../shopping/component/restaurant/restaurant
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { RestaurantService } from './services/restaurant.service';
+import { DataTablesModule } from 'angular-datatables';
+
 
 
 
@@ -20,6 +22,7 @@ import { RestaurantService } from './services/restaurant.service';
     FormsModule,
     NgxDatatableModule,
     ReactiveFormsModule,
+    DataTablesModule,
 
 
 
@@ -33,6 +36,7 @@ import { RestaurantService } from './services/restaurant.service';
     FormsModule,
     NgxDatatableModule,
     ReactiveFormsModule,
+    DataTablesModule,
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [

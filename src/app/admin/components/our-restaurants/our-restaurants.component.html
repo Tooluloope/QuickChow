@@ -1,11 +1,29 @@
 <div class="container" style="margin-top: 30px; padding: 50px 0;">
   <p><a routerLink="/admin/restaurants/our-restaurants/new" class="btn btn-primary">New Product</a></p>
   <div>
-    <ngx-datatable
-      [rows]="rows"
-      [columns]="columns"
-      class="dark">
-    </ngx-datatable>
+    <table  datatable class="row-border hover" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+      <thead>
+        <tr>
+          <th>Restaurant Name</th>
+          <th>Restaurant Location</th>
+          <th>Delivery Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let restaurant of restaurantList">
+          <td>{{ restaurant.displayName }}</td>
+          <td>{{ restaurant.location }}</td>
+          <td>{{ restaurant.deliveryPrice }}</td>
+          <td>
+            <a [routerLink]="['/admin/restaurants/our-restaurants/', restaurant.$key]">Edit</a>
+          </td>
+        </tr>
+        <tr *ngIf="restaurantList?.length == 0">
+          <td colspan="3" class="no-data-available">No data!</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 

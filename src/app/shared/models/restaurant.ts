@@ -1,8 +1,9 @@
 export interface Restaurant {
-    $key: string;
+    $key?: string;
     name: string;
     displayName: string;
     location: string;
+    deliveryPrice: number;
     imageUrl: string;
   
   }

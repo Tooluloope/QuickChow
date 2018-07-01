@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'restaurants/our-restaurants/new',
     component: NewRestaurantComponent
+  },
+  {
+    path: 'restaurants/our-restaurants/:id',
+    component: NewRestaurantComponent
   }
  
 ];
