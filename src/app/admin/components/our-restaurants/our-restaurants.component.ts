@@ -22,12 +22,11 @@ export class OurRestaurantsComponent implements OnDestroy, OnInit {
         y['$key'] = element.key;
         this.restaurantList.push(y as Restaurant);       
       });
-      this.dtTrigger.next();
-
     });
 
   }
   ngOnInit(): void {
+    this.dtTrigger.next();
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10
